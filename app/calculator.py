@@ -1,10 +1,11 @@
 from math import pow
+from numbers import Number
 from random import randrange
 
 
 class Calculator:
 
-    def __init__(self, x, y):
+    def __init__(self, x: Number, y: Number):
         self.x = x
         self.y = y
 
@@ -24,5 +25,5 @@ class Calculator:
         return pow(self.x, self.y)
 
     @staticmethod
-    def random(a, b):
+    def random(a: int, b: int):
         return randrange(a, b)
